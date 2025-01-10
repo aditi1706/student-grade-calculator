@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+       <form action="" id="loginForm">
+        <h2>Login</h2>
+        <div class="input-box">
+            <input type="email" required>
+            <label for="mail">Email </label>
+            <span class="icons"><ion-icon name="mail"></ion-icon></span>
+        </div>
+        <div class="input-box">
+            <input type="password" required>
+            <label for="password">password</label>
+            <span class="icons"><ion-icon name="lock-closed"></ion-icon></span>
+        </div>
+
+        <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#">Forgot password?</a>
+        </div>
+        <button type="submit">Login</button>
+
+        <div class="account-opt">
+            <p>Don't have an account? 
+                <a href="#registerFrom" id="register">Register</a></p>
+        </div>
+       </form>
+
+           <!-- New registration form -->
+    <form action="" id="registerForm" style="display: none;">
+        <h2>Register</h2>
+        <div class="input-box">
+            <input type="text" required>
+            <label for="name">Name</label>
+            <span class="icons"><ion-icon name="person"></ion-icon></span>
+        </div>
+        <div class="input-box">
+            <input type="email" required>
+            <label for="email">Email</label>
+            <span class="icons"><ion-icon name="mail"></ion-icon></span>
+        </div>
+        <div class="input-box">
+            <input type="password" required>
+            <label for="password">Password</label>
+            <span class="icons"><ion-icon name="lock-closed"></ion-icon></span>
+        </div>
+        <div class="input-box">
+            <input type="password" required>
+            <label for="confirmPassword">Confirm Password</label>
+            <span class="icons"><ion-icon name="lock-closed"></ion-icon></span>
+        </div>
+        <button type="submit">Register</button>
+       <div class="account-opt">
+        <p>Already have an account? <a href="loginForm" id="loginLink">Login</a></p>
+       </div>
+    </form>
+
+    
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
