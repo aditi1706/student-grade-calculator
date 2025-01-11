@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Form</title>
+    <link rel="stylesheet" href="Gstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left"><img src="inspiring wallpaper.jpg" alt="" ></div>
+        <div class="right">
+            <h2> Student Grade Form</h2>
+            <div class="items"><input type="number" class="gradeInput" placeholder="Exam" id="exam"></div>
+            <div class="items"><input type="number" class="gradeInput" placeholder="Quize" id="quize"></div>
+            <div class="items"><input type="number" class="gradeInput" placeholder="Assignments" id="assignments"></div>
+            <button id="showGradeButton" onclick="calcy()">Show Grade</button>
+            <div id="totalGradeDisplay">
+                <h3>Total Grade:</h3>
+                <p id="totalGrade"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Gscript.js"></script>
+</body>
+</html>

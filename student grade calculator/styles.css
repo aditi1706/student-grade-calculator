@@ -18,7 +18,7 @@ body::before{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url(Galaxy\ background\ digital\ art\ _\ Premium\ AI-generated\ image.jpg);
+    background-image: url(download\ \(1\).jpg);
     background-position: center;
     background-size: cover;
 }
@@ -30,6 +30,7 @@ body::before{
     border-radius: 10px;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px rgba(241, 97, 225, 0.3);
 }
 
 form{
@@ -135,11 +136,3 @@ button:hover{
     text-decoration: none;
     color: #fff;
 }
-/* #registerForm p{
-    color: #ccc;
-}
-
-#registerForm a{
-    text-decoration: none;
-    color: #ccc;
-} */
