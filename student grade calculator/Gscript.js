@@ -1,28 +1,31 @@
-const calcy = () =>{
-    let exam = document.getElementById("exam").value;
-    let quize = document.getElementById("quize").value;
-    let assignments = document.getElementById("assignments").value;
-    let grade = "";
-    
-    let totalGreade = parseFloat(exam ) + parseFloat(quize) + parseFloat(assignments);
-    alert(totalGreade);
+const calcy = () => {
+    // Get input values
+    let exam = parseFloat(document.getElementById("exam").value) || 0;
+    let quize = parseFloat(document.getElementById("quize").value) || 0;
+    let assignments = parseFloat(document.getElementById("assignments").value) || 0;
 
-    let perc = (totalGreade / 300) * 100;
-    alert(perc);
+    // Calculate total grade
+    let totalGrade = exam + quize + assignments;
 
-    if (totalPercentage >= 90) {
+    // Calculate percentage
+    let perc = (totalGrade / 300) * 100;
+
+    // Determine the grade based on percentage
+    let grade;
+    if (perc >= 90) {
         grade = "A+";
-    } else if (totalPercentage >= 80) {
+    } else if (perc >= 80) {
         grade = "A";
-    } else if (totalPercentage >= 70) {
+    } else if (perc >= 70) {
         grade = "B";
-    } else if (totalPercentage >= 60) {
+    } else if (perc >= 60) {
         grade = "C";
-    } else if (totalPercentage >= 50) {
+    } else if (perc >= 50) {
         grade = "D";
     } else {
         grade = "F";
     }
 
-   document.getElementById('totalGrade').innerHTML =grade.toFixed(2);
-}
+    // Display the grade in the totalGrade element
+    document.getElementById('totalGrade').innerHTML = grade;
+};
