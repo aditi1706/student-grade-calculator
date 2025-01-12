@@ -184,7 +184,7 @@ button {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
     background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
     color: #fff;
-    border-radius: 5px; /* Rounded corners for the button */
+    border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
 }
 
@@ -195,18 +195,11 @@ button:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-:root {
-    --primary-color: #fff;
-    --secondary-color: rgba(255, 255, 255, 0.5);
-    --background-color: rgba(255, 255, 255, 0.1);
-    --border-color: rgba(204, 204, 204, 0.5);
-}
-
     
 #totalGradeDisplay{
     margin-top: 20px;
     padding: 10px;
-    background-color: #f4f4f4;
+    background-color: rgba(255, 255, 255, 0.1);
     color: #000;
     border-radius: 5px;
     text-align: center;
@@ -217,18 +210,3 @@ button:hover {
     font-weight: bold;
     color: black;
 }
-
-
-/* button {
-    margin: 5px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-} */
