@@ -18,7 +18,7 @@ body::before{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url(download\ \(1\).jpg);
+    background-image: url(download.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -30,7 +30,7 @@ body::before{
     border-radius: 10px;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    box-shadow: 0 4px 15px rgba(241, 97, 225, 0.3);
+    box-shadow: 0 4px 15px rgba(240, 237, 239, 0.3);
 }
 
 form{
